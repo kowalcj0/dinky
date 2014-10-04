@@ -39,11 +39,13 @@ def get_just_text(soup):
 
 def get_sections(soup):
     sections = []
+    section = ez_epub.Section()
+    section.title = get_title(soup)
+    text = ""
     for paragraph in soup.find_all("p"):
-        section = ez_epub.Section()
-        section.title = paragraph.text[:20]
-        section.text.append(paragraph.text)
-        sections.append(section)
+        text += paragraph.text
+    section.text.append(text)
+    sections.append(section)
     return sections
 
 
@@ -60,7 +62,7 @@ def main():
     book.impl.addCreator('kowalcj0')
     book.impl.addMeta('date', '2014', event = 'conversion')
 
-    book.make(r'output/article')
+    book.make(r'output/soup')
 
 
 if __name__ == '__main__':
