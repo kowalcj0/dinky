@@ -5,3 +5,5 @@ ipdb==0.8
 langid==1.1.4dev
 lxml==3.4.0
 requests==2.4.1
+cssselect==0.9.1
+readability-lxml==0.3.0.5
