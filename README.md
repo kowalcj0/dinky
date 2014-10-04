@@ -5,10 +5,10 @@ It's a example project that uses:
 * [requests](http://docs.python-requests.org/en/latest/) to fetch the webpage
 * [BeautifulSoup4](http://www.crummy.com/software/BeautifulSoup/) to extract page contents
 * [python-epub-builder](https://code.google.com/p/python-epub-builder/) to create an ePub file
-** which relies on other tools:
-** [Genshi](http://genshi.edgewall.org/) HTML, XML parsing, generating, and processing library
-** [lxml](http://lxml.de/) is a XML toolkit is a Pythonic binding for the C libraries libxml2 and libxslt
-** [IPDF/epubcheck](https://github.com/IDPF/epubcheck) to validate created ePub file
+  * which relies on other tools:
+  * [Genshi](http://genshi.edgewall.org/) HTML, XML parsing, generating, and processing library
+  * [lxml](http://lxml.de/) is a XML toolkit is a Pythonic binding for the C libraries libxml2 and libxslt
+  * [IPDF/epubcheck](https://github.com/IDPF/epubcheck) to validate created ePub file
 
 
 What it does:
