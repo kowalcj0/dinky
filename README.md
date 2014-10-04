@@ -4,6 +4,7 @@ D - I - N - K - Y
 It's a example project that uses:
 * [requests](http://docs.python-requests.org/en/latest/) to fetch the webpage
 * [BeautifulSoup4](http://www.crummy.com/software/BeautifulSoup/) to extract page contents
+* [python-readability](https://github.com/buriy/python-readability) pulls out the main body text and cleans it up
 * [python-epub-builder](https://code.google.com/p/python-epub-builder/) to create an ePub file
   * which relies on other tools:
   * [Genshi](http://genshi.edgewall.org/) HTML, XML parsing, generating, and processing library
@@ -26,5 +27,6 @@ Installation:
 Run:
 
     ./test_soup.py
+    ./test_readability.py
 
 Then check the `output` dir
