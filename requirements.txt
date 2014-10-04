@@ -1,0 +1,7 @@
+Genshi==0.7
+beautifulsoup4==4.3.2
+epub==0.5.2
+ipdb==0.8
+langid==1.1.4dev
+lxml==3.4.0
+requests==2.4.1

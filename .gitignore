@@ -1,0 +1,12 @@
+.idea
+working
+.virtualenv
+__pycache__
+*.pyc
+.coverage
+Distutils.egg-info
+*.log
+*.tmp
+tags
+.DS_Store
+htmlcov
