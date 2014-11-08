@@ -1,0 +1,26 @@
+# =============================================================================
+# BEHAVE CONFIGURATION
+# =============================================================================
+# FILE: .behaverc, behave.ini
+#
+# SEE ALSO:
+#  * http://pythonhosted.org/behave/behave.html#configuration-files
+#  * https://github.com/behave/behave
+#  * http://pypi.python.org/pypi/behave/
+# =============================================================================
+# format   = rerun
+# outfiles = rerun.featureset
+
+[behave]
+format=plain
+#logging_clear_handlers=yes
+logging_filter=-suds
+#log_capture=False
+#stdout_capture=False
+#stderr_capture=False
+logging_level=DEBUG
+# there's a bug fixed in version 1.2.4
+# https://github.com/behave/behave/issues/177
+#logging_format='[%(asctime)s] [%(levelname)s]: %(message)s'
+logging_datefmt="%a %Y-%m-%d %H:%M:%S %z"
+outfiles=reports/behave.log

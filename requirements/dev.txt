@@ -1,0 +1,3 @@
+# this includes all the dependencies for running in dev as well as testing it
+-r common.txt
+

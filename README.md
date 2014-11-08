@@ -13,7 +13,7 @@ It's a example project that uses:
 
 
 What it does:
-------------
+===============
 1. fetch the webpage
 2. Extract page (main) content
 3. Create an ePub file
@@ -21,12 +21,42 @@ What it does:
 
 
 Installation:
+===============
 
     pip install -r requirements --upgrage
 
+
 Run:
+===============
 
     ./test_soup.py
     ./test_readability.py
 
 Then check the `output` dir
+
+
+Running locally
+===============
+To run the service locally:
+
+    python setup.py develop
+    python dinky/
+
+Running tests and generating code coverage
+==========================================
+To have a "clean" target from build artifacts:
+
+    make clean
+
+To run all unit tests and generate a HTML code coverage report along with a
+JUnit XML report in tests/unit/reports:
+
+    make test
+
+To run pyLint and generate a HTML report in tests/unit/reports:
+
+    make pylint
+
+To run all behave tests and generate a JUnit XML report in tests/behave/reports:
+
+    make behave
