@@ -47,7 +47,7 @@ def get_sections(html):
 
 def main():
     url = "http://pl.wikipedia.org/wiki/Rewolucja_pa%C5%BAdziernikowa"
-    url = "http://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A8%D9%84%D8%B4%D9%81%D9%8A%D8%A9"
+    #url = "http://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A8%D9%84%D8%B4%D9%81%D9%8A%D8%A9"
     html = get_html(url)
    
     book = ez_epub.Book()
