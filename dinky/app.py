@@ -14,7 +14,7 @@ from tornado.util import exec_in
 from tornado.escape import native_str
 from tornado.web import RedirectHandler
 
-from dinky.controllers import roothandler, hellohandler
+from dinky.controllers import roothandler, hellohandler, bgndhandler
 
 # directory containing the config files
 CONF_DIR = os.path.join(os.path.dirname(__file__), '../config')
@@ -96,6 +96,7 @@ def setup_server():
         (r"/", RedirectHandler, {"url":
                                  r"/{}/dinky".format(version_url_prefix)}),
         (r"/{}/dinky".format(version_url_prefix), roothandler.RootHandler),
+        (r"/{}/dinky/bgnd".format(version_url_prefix), bgndhandler.BgndHandler),
         (r"/{}/dinky/hello".format(version_url_prefix),
          hellohandler.HelloHandler)
     ])

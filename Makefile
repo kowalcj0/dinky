@@ -16,3 +16,6 @@ pylint:
 
 behave:
 	cd tests/behave && behave features -v --junit --junit-directory reports
+
+perf:
+	locust -f tests/perf/basic_locust.py --no-web -c 100 -r 20 -n 1000 --only-summary --logfile=perf_test.log
